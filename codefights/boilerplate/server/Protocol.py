@@ -26,19 +26,18 @@ class Protocol:
         self.out_stream = out_stream
 
     def handshake(self):
-        self.out_stream.write(self.out_stream,
-                              self.HANDSHAKE + '\n')
+        self.out_stream.write('%s\n' % self.HANDSHAKE)
         self.out_stream.flush()
 
     def send_request(self, move):
-        self.out_stream.write(self.REQUEST_HEADER + self.serialize_move(move))
+        self.out_stream.write('%s%s\n' % (self.REQUEST_HEADER, Protocol.serialize_move(move)))
         self.out_stream.flush()
 
     def read_response(self):
         return self.parse(self.in_stream.readline())
 
     @staticmethod
-    def serialize_move(self, move):
+    def serialize_move(move):
         rez = ''
 
         for attack in move.get_attacks():
@@ -48,7 +47,7 @@ class Protocol:
             rez += 'b' + block[0]
 
         if move.get_comment():
-            rez += 'c' + self.sanitize_comment(move.get_comment())
+            rez += 'c' + Protocol.sanitize_comment(move.get_comment())
 
         return rez.lower()
 
@@ -110,8 +109,8 @@ class Protocol:
             if index >= len(words):
                 raise ProtocolException('Insufficient params in {' +
                                         line +
-                                        '}. Syntax is [YOUR-SCORE area] '
-                                        '[OPPONENT-SCORE area] '
+                                        '}. Syntax is [YOUR-SCORE area] ' +
+                                        '[OPPONENT-SCORE area] ' +
                                         '[ENEMY-MOVE move]')
 
             next_keyword = words[index]

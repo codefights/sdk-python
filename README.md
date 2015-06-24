@@ -9,11 +9,6 @@ Download this package to /your/desired/path.
 Install it:
 ```
 cd /your/desired/path/codefights-python-SDK/
-python setup.py install
-```
-or
-```
-cd /your/desired/path/codefights-python-SDK/
 sudo python setup.py install
 ```
 or
@@ -31,5 +26,7 @@ and follow instructions.
 
 Modify MyFighter.py if you want to write your own bot.
 
+You can move MyFighter.py from initial directory since it is not a part of the
+SDK package.
 ---
 ©  Visma Lietuva

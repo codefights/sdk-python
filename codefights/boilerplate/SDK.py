@@ -4,13 +4,11 @@ from codefights.boilerplate.Human import Human
 from codefights.boilerplate.Arena import Arena
 from codefights.samples.Boxer import Boxer
 from codefights.samples.Kickboxer import Kickboxer
-from codefights.MyFighter import MyFighter
 
 
 FIGHT_HUMAN_SWITCH = '--fight-me'
 FIGHT_BOT_SWITCH = '--fight-bot'
 RUN_ON_SERVER_SWITCH = '--fight-on-server'
-
 USAGE_INSTRUCTIONS = '''
 %s\t\t%s
 %s %s
@@ -25,24 +23,24 @@ USAGE_INSTRUCTIONS = '''
 class SDK:
 
     @staticmethod
-    def run(argv):
+    def run(my_fighter, argv):
         del argv[0]
 
         if SDK.is_fight_human_mode(argv):
             arena = Arena()
             arena.register_fighter(Human(), 'You')
-            arena.register_fighter(MyFighter(), 'Your bot')
+            arena.register_fighter(my_fighter(), 'Your bot')
             arena.stage_fight()
 
         elif SDK.is_fight_bot_mode(argv):
             arena = Arena()
-            arena.register_fighter(MyFighter(), 'Your bot')
+            arena.register_fighter(my_fighter(), 'Your bot')
             arena.register_fighter(SDK.create_bot(argv), argv[1])
             arena.stage_fight()
 
         elif SDK.is_run_in_server_mode(argv):
             serverMode = ServerMode()
-            serverMode.run(MyFighter())
+            serverMode.run(my_fighter())
 
         else:
             SDK.print_usage_instructions(argv)

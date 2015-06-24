@@ -35,4 +35,4 @@ class MyFighter (IFighter):
         return move
 
 if __name__ == '__main__':
-    codefights.boilerplate.SDK.SDK.run(sys.argv)
+    codefights.boilerplate.SDK.SDK.run(MyFighter, sys.argv)

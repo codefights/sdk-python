@@ -18,8 +18,8 @@ USAGE_INSTRUCTIONS = '''
 %s\t%s
 ''' % (FIGHT_HUMAN_SWITCH, 'runs your bot against you in interactive mode',
        FIGHT_BOT_SWITCH, 'boxer\truns your bot against a built-in boxer bot',
-       FIGHT_BOT_SWITCH, ' kickboxer\truns your bot against a built-in '
-                         'kickboxer bot\n',
+       FIGHT_BOT_SWITCH, 'kickboxer\truns your bot against a built-in '
+                         'kickboxer bot',
        RUN_ON_SERVER_SWITCH, 'runs your bot in codefights engine environment')
 
 class SDK:

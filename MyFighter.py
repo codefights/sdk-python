@@ -28,11 +28,17 @@ class MyFighter (IFighter):
                        opponents_last_move=None,
                        my_last_score=0,
                        opponents_last_score=0):
+        """
+        You must implement make_next_move method in MyFighter class.
+        Feel free to create helper classes in this file.
+        """
         move = Move()
 
         move.add_attack(Area.NOSE).add_block(Area.GROIN).add_attack(Area.BELLY)
 
         return move
 
+
+# DO NOT EDIT THE LINES BELOW!
 if __name__ == '__main__':
     codefights.boilerplate.SDK.SDK.run(MyFighter, sys.argv)

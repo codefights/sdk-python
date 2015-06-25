@@ -23,13 +23,17 @@ Modify MyFighter.py if you want to write your own bot.
 
 You can rename or move MyFighter.py from initial directory since it is not a part of the SDK package,
 
-but make sure you don't delete anything above the MyFighter class docstring or anything below ```# DO NOT EDIT THE LINES BELOW!``` comment.
+but make sure you don't delete anything above the MyFighter class docstring or anything below
+```
+# DO NOT EDIT THE LINES BELOW!
+```
+comment.
 
 
 ### Testing your bot
 Run it
 ```
-python </your/desired/path/>MyFighter.py
+python </your/desired/path/codefights-python-SDK/>MyFighter.py
 ```
 and follow instructions.
 

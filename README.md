@@ -27,5 +27,6 @@ and follow instructions.
 Modify MyFighter.py if you want to write your own bot.
 
 You can move MyFighter.py from initial directory since it is not a part of the SDK package.
+
 ---
 ©  Visma Lietuva

@@ -33,7 +33,7 @@ comment.
 ### Testing your bot
 Run it
 ```
-python </your/desired/path/codefights-python-SDK/>MyFighter.py
+python </path/to/your/fighter/>MyFighter.py
 ```
 and follow instructions.
 

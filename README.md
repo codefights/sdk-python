@@ -4,6 +4,15 @@
 Visit [codefights.net](http://www.codefights.net/) to learn more about this fun project.
 
 ### Installation
+#### Using PyPI
+```
+pip install codefights
+```
+or
+```
+easy_install codefights
+```
+#### Without using PyPI
 Download this package to /your/desired/path.
 
 Install it:
@@ -33,7 +42,7 @@ comment.
 ### Testing your bot
 Run it
 ```
-python </your/desired/path/>sdk-python/MyFighter.py
+python </path/to/fighter/>MyFighter.py
 ```
 and follow instructions.
 

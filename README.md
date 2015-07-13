@@ -8,12 +8,12 @@ Download this package to /your/desired/path.
 
 Install it:
 ```
-cd </your/desired/path/>codefights-python-SDK/
+cd </your/desired/path/>sdk-python/
 sudo python setup.py install
 ```
 or
 ```
-pip install </your/desired/path/>codefights-python-SDK
+pip install </your/desired/path/>sdk-python
 ```
 
 ### Writing your first bot
@@ -33,7 +33,7 @@ comment.
 ### Testing your bot
 Run it
 ```
-python </your/desired/path/>codefights-python-SDK/MyFighter.py
+python </your/desired/path/>sdk-python/MyFighter.py
 ```
 and follow instructions.
 

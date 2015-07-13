@@ -20,10 +20,6 @@ Install it:
 cd </your/desired/path/>sdk-python/
 sudo python setup.py install
 ```
-or
-```
-pip install </your/desired/path/>sdk-python
-```
 
 ### Writing your first bot
 Developing a simple bot for a Codefights.net tournament is really easy.

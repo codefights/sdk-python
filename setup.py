@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='codefights',
-    version='0.1',
+    version='0.2',
     description='Codefights.net SDK for Python developers',
     author='Gytis Talocka',
     author_email='kurideja@gmail.com',

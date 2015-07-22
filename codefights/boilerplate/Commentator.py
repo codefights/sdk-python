@@ -34,7 +34,7 @@ class Commentator:
         if f1_lifepoints > f2_lifepoints:
             print 'THE WINNER IS %s' % self._fighter1
 
-        elif f1_lifepoints > f2_lifepoints:
+        elif f2_lifepoints > f1_lifepoints:
             print 'THE WINNER IS %s' % self._fighter2
 
         else:

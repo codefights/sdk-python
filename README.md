@@ -43,7 +43,7 @@ class MyFighter (IFighter):
     |------------+---------|
     | Area.JAW   | (8pts)  |
     |------------+---------|
-    | Area.Belly | (6pts)  |
+    | Area.BELLY | (6pts)  |
     |------------+---------|
     | Area.GROIN | (4pts)  |
     |------------+---------|

@@ -1,7 +1,6 @@
 import sys
 from codefights.boilerplate.server.Protocol import ServerResponse, Protocol
 
-
 class ServerMode:
 
     def __init__(self):

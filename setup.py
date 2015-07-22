@@ -9,6 +9,6 @@ setup(
     author='Gytis Talocka',
     author_email='kurideja@gmail.com',
     url='https://github.com/codefights/sdk-python',
-    download_url='https://github.com/codefights/sdk-python/tarball/0.1',
+    download_url='https://github.com/codefights/sdk-python/tarball/0.2',
     packages=['codefights', 'codefights.boilerplate', 'codefights.boilerplate.server', 'codefights.model', 'codefights.samples'],
 )

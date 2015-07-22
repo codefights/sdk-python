@@ -68,7 +68,7 @@ class MyFighter (IFighter):
 
 # DO NOT EDIT THE LINES BELOW!
 if __name__ == '__main__':
-  codefights.boilerplate.SDK.SDK.run(MyFighter, sys.argv)
+    codefights.boilerplate.SDK.SDK.run(MyFighter, sys.argv)
 ```
 
 ### Testing your bot

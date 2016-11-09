@@ -1,4 +1,4 @@
-# Codefights.net SDK for Python
+# Codefights.net SDK for Python 2.7
 
 ### About
 Visit [codefights.net](http://www.codefights.net/) to learn more about this fun project.

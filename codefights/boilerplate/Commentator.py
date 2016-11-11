@@ -21,7 +21,7 @@ class Commentator:
         self._lp1 -= score2
         self._lp2 -= score1
 
-        print '%s vs %s: %s to %s' % (
+        print '%s vs %s: %s to %s\n' % (
             self._fighter1,
             self._fighter2,
             self._lp1,

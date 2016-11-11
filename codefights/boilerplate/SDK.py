@@ -9,8 +9,7 @@ from codefights.samples.Kickboxer import Kickboxer
 FIGHT_HUMAN_SWITCH = '--fight-me'
 FIGHT_BOT_SWITCH = '--fight-bot'
 RUN_ON_SERVER_SWITCH = '--fight-on-server'
-USAGE_INSTRUCTIONS = '''
-%s\t\t%s
+USAGE_INSTRUCTIONS = '''%s\t\t%s
 %s %s
 %s %s
 %s\t%s

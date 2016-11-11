@@ -54,7 +54,7 @@ class Commentator:
         attacks = move.get_attacks()
 
         if len(attacks) <= 0:
-            return ' did not attack at all '
+            return ' did NOT attack at all '
 
         rez = ' attacked '
 
@@ -68,14 +68,14 @@ class Commentator:
             else:
                 rez += '(+), '
 
-        return '%s %s %s' % (rez, 'scoring', score)
+        return '%s %s %s ' % (rez, 'scoring', score)
 
     @staticmethod
     def _describe_defences(move):
         blocks = move.get_blocks()
 
         if len(blocks) <= 0:
-            return ' and was not defending at all.'
+            return ' and was NOT defending at all.'
 
         rez = ' while defending '
         for block in blocks:

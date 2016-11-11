@@ -79,7 +79,7 @@ class Commentator:
 
         rez = ' while defending '
         for block in blocks:
-            rez += rez + block + ', '
+            rez += block + ', '
 
         return rez
 
